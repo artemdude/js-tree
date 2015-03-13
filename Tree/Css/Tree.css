@@ -1,0 +1,160 @@
+﻿/* TraTree */
+
+        .tr_tb
+        {
+            border: 0px ;
+            border-collapse: collapse;
+
+        }
+        
+        .tr_tb td
+        {
+            padding: 0px;
+        }
+
+        .tr_tb tr
+        {
+            padding: 0px;
+        }
+        
+        .tr_tb tr
+        {
+            font: 11px Tahoma;
+            font-size: 11px;
+            color: #1E3695;
+            cursor:  default;
+        }
+        
+        .tr_row-title
+        {
+            white-space: nowrap;
+        }
+
+        .tr_row-info
+        {
+            text-align: left; /* to fix ie9 alignment bug*/
+        }
+
+        .tr_row-info:hover .tr_plus, .tr_minus, .tr_tit
+        {
+            cursor: pointer;
+        }
+        
+        .tr_row-info:hover .tr_plus
+        {
+            background: url('../Images/Tree/ttn_cell_plus_h.png');
+        }
+        
+        .tr_row-info:hover .tr_minus
+        {
+            background: url('../Images/Tree/ttn_cell_minus_h.png');
+        }
+        
+        .tr_cell
+        {
+            width: 22px;
+            height: 20px;
+        }
+        
+        /*node*/
+        .tr_cell_n
+        {
+            background: url('../Images/Tree/ttn_cell_c.png') no-repeat scroll 0 0 transparent;
+        }
+        
+        /*last node*/
+        .tr_cell_ln
+        {
+            background: url('../Images/Tree/ttn_cell_cl.png') no-repeat scroll 0 0 transparent;
+        }
+        
+        /*parent node line*/
+        .tr_cell_pn
+        {
+            background: url('../Images/Tree/ttn_cell_l.png');
+        }
+        
+        .tr_plus, .tr_minus, .tr_expand-cell
+        {
+            width: 22px;
+            height: 20px;
+        }
+        
+        .tr_plus
+        {
+            background: url('../Images/Tree/ttn_cell_plus.png');
+        }
+        
+        .tr_minus
+        {
+            background: url('../Images/Tree/ttn_cell_minus.png');
+        }
+
+        .tr_check-box-div
+        {
+            width: 18px;
+        }
+
+        .tr_check-box-c, .tr_check-box-n, .tr_check-box-s
+        {
+            padding-left: 17px !important;
+        }
+
+        .tr_check-box-c
+        {
+            background: url('../Images/Tree/ttn_check-box-c.gif') no-repeat scroll 0 -1px transparent;
+        }
+
+         .tr_check-box-n
+        {
+            background: url('../Images/Tree/ttn_check-box-n.gif') no-repeat scroll 0 -1px transparent;
+        }
+
+        .tr_check-box-s
+        {
+             background: url('../Images/Tree/ttn_check-box-s.gif') no-repeat scroll 0 -1px transparent;
+        }
+
+        .tr_node-highlighted
+        {
+          background:#FFFACD;
+          font-weight:bold;
+        }
+
+
+
+
+        .tr_search-container, .tr_buttons-container
+{
+    padding: 5px;
+    background-color: #F2F2EE;
+     white-space:nowrap;
+}
+
+        .tr_search-container input[type=text]
+        {
+            color: #333333;
+            font-size: 11px;
+            width:190px;
+             margin-bottom: 0px !important;
+                padding: 2px !important;
+        }
+
+        .tr_search-container input[type=button]
+        {
+            font-size: 11px;
+        }
+
+        .tr_nofound-label
+        {
+            color: #999999;
+            font-size: 11px;
+            vertical-align:middle;
+             padding: 5px;
+        }
+
+        .tr_container
+        {
+            padding: 5px;
+        }
+        

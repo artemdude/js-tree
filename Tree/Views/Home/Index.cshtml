@@ -1,0 +1,49 @@
+﻿@{
+    ViewBag.Title = "Tree";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+
+body
+{
+         font-family: Verdana;
+         color:#999;
+         font-size:0.8em;
+    }
+
+</style>
+
+<script language="javascript">
+
+    $(function () {
+
+        $.ajax({
+            url: 'Home/GetData',
+            success: function (data) {
+                tree = new TraTreeObj('tree', data);
+                tree.enableSearch = true;
+                tree.enableCheckBox = true;
+                tree.showExpandAllButton = true;
+                tree.showCollapseAllButton = true;
+                tree.width = '300px';
+                tree.height = '240px';
+                tree.emptyTreeText = 'tree is empty!';
+
+                tree.init();
+            }
+        });
+
+      
+
+    });
+
+
+</script>
+
+
+<h2>Tree</h2>
+
+<div style=" margin-bottom:15px;">To search just start to input word. For example 'n2 332'</div>
+
+<div id='tree'></div>
