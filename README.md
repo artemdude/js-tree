@@ -1,6 +1,6 @@
-week-days-selector
+#js tree
 ===============================
 
-Bootstrap Week days selector (combobox)
+[See the demo](http://code.shkolovy.com/tree)
 
-[See the demo](http://artemdude.github.io/week-days-selector/index.html)
+![ScreenShot](https://raw.github.com/artemdude/js-tree/master/screenshots/tree.png)
